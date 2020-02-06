@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <p> Для внесения вашего сайта в каталог, заполните форму:
+</p>
+<form name="info" action="https://fe.it-academy.by/TestForm.php" >
+<table>
+<tbody>
+  <tr>
+    <td>Разработчики:</td>
+    <td id="authorRow"><input type="text" name="author" style="width: 150px" onblur=validAuthor()></td>
+  </tr>
+<tr>
+  <td>Название сайта:</td>
+  <td id="siteRow"><input type="text" name="titleSite" style="width: 150px"></td>
+</tr>
+<tr>
+  <td>URL сайта:</td>
+  <td id="urlRow"><input type="text" name="urlSite" style="width: 150px"></td>
+</tr>
+<tr>
+  <td>Дата запуска сайта:</td>
+  <td id="startDateRow"><input type="text" name="startDate" style="width: 80px"></td>
+</tr>
+<tr>
+  <td>Посетителей в сутки:</td>
+  <td id="personsRow"><input type="text" name="persons" style="width: 80px"></td>
+</tr>
+<tr>
+  <td>E-mail для связи:</td>
+  <td id="mailRow"><input type="text" name="mail" style="width: 150px"></td>
+</tr>
+<tr>
+  <td>Рубрика каталога:</td>
+  <td id="rubricRow"><select name="rubric"> 
+  <option value="1" >здоровье</option>
+  <option value="2" >домашний уют</option>
+  <option value="3" selected>  бытовая техника</option>
+  </select></td>
+</tr>
+<tr>
+  <td>Размещение:</td>
+  <td id="publicRow">
+  <input id="public1" type="radio" name="public" value="1">
+  <span>бесплатное</span>
+  <input type="radio" name="public" value="2">
+  <span>платное</span>
+  <input type="radio" name="public" value="3">
+  <span>VIP</span>
+  </td>
+</tr>
+<tr>
+  <td>Разрешить отзывы:</td>
+  <td id="commentsRow"><input type="checkbox" name="comments"></td>
+</tr>
+<tr>
+  <td colspan="2" id="articleRow">Описание сайта:<br>
+  <textarea name="article" style="width: 400px; height: 50px"></textarea></td>
+</tr>
+<tr>
+  <td><input type="submit" value="Опубликовать"></td>
+  <td style="width: 350px"></td>
+</tr>
+</tbody>
+</table>
+</form>
+    <script src="script.js"></script>
+  </body>
+</html>
